@@ -1,0 +1,216 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			@font-face{
+				font-family:festus correct;
+				src:url(fe.ttf);
+			}
+			html{
+				overflow-x:hidden;
+			}
+			body{
+				font-family:festus correct, Regular;
+				font-size:45px;
+				background:url(drus2.jpg) no-repeat  center fixed;
+				color:rgb(0, 153, 153);
+			}
+			span{
+				display:block;
+			}
+			.header{
+				color:rgb(0, 102, 102);
+				margin-top:0;
+			}
+			.div1{
+				background-color:rgba(0,0,0,0.7);
+				width:85%;
+				position:relative;
+				left:7.5%;
+				right:7.5%;
+				top:5%;
+				bottom:5%;
+				padding:10px;
+				border:5px outset rgba(0,51,51,0.7)
+			}
+			.j{
+				color:rgb(0, 153, 204);
+			}
+			.kul{
+				color:rgb(0, 119, 179);
+			}
+			.ar{
+				color:rgb(230, 230, 0);
+			}
+			.d{
+				color:rgb(0, 51, 102);
+			}
+			.p{
+				color:rgb(102, 153, 153);
+			}
+			.anim img {
+				opacity: 0;
+				width:5%;
+				transition: 1s all;
+			}
+			.anim:hover img {
+				opacity: 1;
+				width:1132px;
+			}
+			.anim2 img {
+				position:relative;
+				left:-100%;
+				transition: 1s all;
+				height:5%;
+			}
+			.anim2:hover img {
+				left:0%;
+				height:60%;
+			}
+			.anim3 img {
+				position:relative;
+				left:200%;
+				transition: 1s all;
+				width:5%
+			}
+			.anim3:hover img {
+				left:0%;
+				width:1132px;
+			}
+			.anim4 img {
+				opacity:0;
+				transition: 1s all;
+				width:5%;
+			}
+			.anim4:hover img {
+				opacity:1;
+				width:1132px;
+			}
+			.anim5 img {
+				opacity:0;
+				transition: 1s all;
+				width:5%;
+			}
+			.anim5:hover img {
+				opacity:1;
+				width:1132px;
+			}
+		</style>
+		<script language="javascript" type="text/javascript">
+			function userbrows(){
+				var id;
+				id=window.open("","example","width=800,height=500");
+				id.focus();
+				id.document.open();
+				id.document.write("Ваш браузер - " + navigator.appName);
+				id.document.write("<br><br>");
+				id.document.write("Если написано NetScape, то это потому что navigator.appName возвращает именно это имя.")
+				id.document.write("<br><br>");
+				id.document.write("Версия вашего browser: " + navigator.appVersion);
+				id.document.write("<br><br>");
+				var brver = navigator.appVersion;
+				if (brver.search("Chrome")!= -1 ) {
+					id.document.write("Вы счастивый пользватель браузера Chrome!<br>");
+					id.document.write("В данном браузере будут работать все скрипты.<br>");
+				}
+				else if (brver.search("Edge")!= -1 ) {
+						id.document.write("У вас браузер Edge");
+					}
+					else if (brver.search("WOW64")!= -1 ) {
+							id.document.write("У вас браузер Explorer");
+						}
+						else {
+							id.document.write("У вас Браузер...");
+						}
+				id.document.close();
+			}		
+		</script>
+	</head>
+	<body>
+		<div class="div1">
+			<span class="header" align="center" style="font-size:72pt">Кул'Тирас</span>
+			<span class="header" align="center" style="font-size:52pt">Друствар</span>
+			<span class="header" align="center" style="font-size:32pt">Царство мучений</span>
+			Кэтрин Праудмур находит Джайну в Царстве мучений...
+			<span class="kul">- Наконец-то.</span>
+			<div>
+				<img src="25j.png" width="1132">
+			</div>
+			Маленькая Джайна плачет и шепчет:
+			<span class="j">- Это я во всём виновата...</span>
+			Кэтрин пытается дотронуться до своей дочери, но она пропадает, а саму Кэтрин окутывает тьма.
+			<div class="anim2">
+				<img src="25lj.png" width="1132">
+			</div>
+			<span>Вспышка света...</span>
+			<span class="ar">-Мы опоздали... Весь город должен быть очищен.</span>
+			<div>
+				<img src="25ar1.png" width="1132">
+			</div>
+			Артас оборачиватся и произносит:
+			<span class="ar">-Джайна...</span>
+			<div class="anim">
+				<img src="25ar2.png" width="1132">
+			</div>
+			<span class="j">-Прости меня, Артас. Я не могу на это смотреть.</span>
+			Джайна разворачиватся и уходит во тьму.
+			Голос мыслей Джайны разносится в голове у Кэтрин:
+			<span class="j">- Можно было вмешаться... Он бы не стал... Он был бы жив...</span>
+			<span>Вспышка света ...</span>
+			<span class="d">- Меня поражает твоя наивность, Джайна.</span>
+			Кэтрин, услышав голос мужчины:
+			<span class="kul">- Дэйлин?</span>
+			<div>
+				<img src="25deij.png" width="1132">
+			</div>
+			<span class="j">- Прошу остановись, отец! ...Я должна была убедить его... Ты не понимаешь!</span>
+			<span class="d">- Я понимаю больше чем тебе кажется, дитя. <a class="j">...Я была слабой...</a> Может со временем и ты поймёшь...</span>
+			<div class="anim3">
+				<img src="25dei.png" width="1132">
+			</div>
+			Дэйлин разворачивается и уходит, крикнув:
+			<span class="d">- Взять их!</span>
+			<span class="j">...Застравить его понять...-Отец, нет! ...Прости меня...</span>
+			Кэтрин, видя это, произносит:
+			<span class="kul">- Его злейшим врагом был он сам. <a class="j">...Надо было объяснить...</a></span>
+			<span class="d">- Ты правда думаешь, что от вины можно так легко избавиться!</span> 
+			Голос Дэйлина эхом звучит в голове Кэтрин. Она хватается за голову и кричит.
+			<div class="anim4">
+				<img src="25head.png">
+			</div>
+			<span>Вспышка света ...</span>
+			Джана сидит над трупом своего отца, плачет, и придерживая его плечи, всхлипывает:
+			<span class="j">- Отец... Почему ты не послушал меня?..</span>
+			<div class="anim5">
+				<img src="25dead.png">
+			</div>
+			<span>Вспышка света ...</span>
+			Кэтрин видит саму себя и Присциллу Эшвейн в момент приезда Джайны в Боралус.
+			<div class="anim">
+				<img src="25bor.png">
+			</div>
+			Присцилла обращается к Кэтрин:
+			<span class="p">- Кэтрин, закон есть закон. Наказание за измену - смерть...</span>
+			<span class="kul">- Ты принимаешь приговор своей родины?</span>
+			Кэтрин видит, как она и другие призраки сомнений Джайны стоят вокруг неё.
+			<div>
+				<img src="gho.png" width="1132">
+			</div>
+			<span class="j">- Я приму твой приговор, мама...</span>
+			Кэтрин подходит к Джайне и взмахом руки рассеивает свой призрак.
+			<span class="kul">- Дочь моя... Прости меня. Прости отца, и прости... саму себя.</span>
+			Призраки рассеиваются, последним рассеивается призрак Дэйлина.
+			<div class="anim3">
+				<img src="25ghofade.png" width="1132">
+			</div>
+			Уже голос Кэтрин звучит в голове у Джайны:
+			<span class="kul">...Поднимайся,милая...</span>
+			<span>Вспышка света ...</span>
+			Мать и дочь обнимаются.
+			<div>
+				<img src="25hug.png" width="1132">
+			</div>
+			<button onclick="userbrows()">Прикол</button>
+		</div>
+	</body>
+</html>
