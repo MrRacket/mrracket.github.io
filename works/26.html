@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<style>
+			@font-face{
+				font-family: AuntJudyBetter;
+				src:url(26font.ttf);
+			}
+			body{
+				font-family: AuntJudyBetter;
+				font-size: 30px;
+				background: url(26bg.jpg)  no-repeat center/100% fixed blue;
+				color:gold;
+			}
+			.div1{
+				background-color:rgba(0,0,0,0.7);
+				width:85%;
+				position:relative;
+				left:7.5%;
+				right:7.5%;
+				top:5%;
+				bottom:5%;
+				padding:10px;
+				border:5px outset rgba(0,200,255,0.7);
+			}
+			.div2{
+				display:inline-block;
+				position:relative;
+				left:1%;
+				top:1%;
+				width:1180px;
+				margin-right:10px;
+			}
+			h1,h3,p{
+				margin:0;
+			}
+			.div3{
+
+			}
+			.div4{
+
+				top:380px;
+				width:350px;
+			}
+			.div34{
+				display:inline-block;
+				padding:5px;
+				position:relative;
+				right:1%;
+				top:1%;
+				border:3px solid gold;
+				float:right;
+				margin-left:10px;
+			}
+			ul,li{
+				list-style:none;
+				padding:0;
+				margin:0;
+			}
+			.submenu{
+				transform: scaleY(0);
+				transform-origin: 0 0;
+			}
+			.family li:hover .submenu{
+				transform: scaleY(1);
+				transition:1s all;
+			}
+		</style>
+		<script type="text/javascript">
+			var i = 1;
+			var flag1=1;
+			function movie() {
+			if(flag1 == 0) {
+			eval("document.images[1].src='26ar" + i + ".png';");
+			i++;
+			if(i>13) i=1;
+			}
+			setTimeout("movie();", 500);
+		}
+		</script>
+	</head>
+	<body onload="movie()">
+		<div class="div1">
+			<div class="div2">
+				<h1 align="center">Артас Менетил</h1>
+				<h2>Краткое описание</h2>
+				<hr width="1180" color="gold">
+				<p align="justify">Артас Менетил, кронпринц Лордерона и рыцарь Cеребряной Длани
+				был сыном короля Теренаса Менетила II и наследником трона. Утер Светоносный
+				обучал его бравому делу паладина, а к волшебнице Джайне Праудмур он испытывал
+				романтические чувства. Но несмотря на многообещающее начало жизни, после объединения
+				с Королем-личем, Артас стал одним из самых ужасных созданий,
+				когда-либо встречавшихся на просторах Азерота.<p>
+				<h2>Биография</h2>
+				<hr width="1180" color="gold">
+				<p align="justify">
+					Принц Артас Менетил родился за четыре года до Первой Войны в семье Короля Теренаса Менетила II. Молодой принц рос в те времена, когда земли всего Азерота были пронизаны войной, Альянс находился в смятении, а темные облака всё ещё вырисовывались на горизонте. Будучи ещё ребенком, Артас подружился с Варианом Ринном.<br>
+					Боевому искусству Артаса обучал сам Мурадин Бронзобород, брат короля дворфов Магни Бронзоборода. Артас преуспел в этом начинании и стал экспертом-мечником. Под покровительством Утера Светоносного Артас вступил в орден Рыцарей Серебряной Длани в возрасте 19 лет. Несмотря на свое безрассудство и упрямство, Артас стал прославленным воином. Одним из его самых известных подвигов стала контратака на троллей, атаковавших Кель'Талас из Зул'Амана.<br>
+					В эти времена Артас встретил младшую дочь Даэлина Праудмура - волшебницу Джайну. На протяжении нескольких лет они росли бок о бок друг с другом, и всё это закончилось романтическими отношениями. Они очень сильно любили друг друга. Но со временем Артас стал задаваться вопросом: готовы ли они быть вместе? И он решил расстаться с Джайной, чтобы она могла сосредоточиться на своём магическом обучении, а он — на своих обязательствах перед Лордероном. Но вскоре после этого они решили возобновить свои отношения, но это случилось в самом начале нашествия Плети - события, которое навсегда изменило их жизни.
+				</p>
+			</div>
+			<div class="div34">
+				<p align="center" style="font-size:40px">Принц Артас</p>
+				<div class="div3">
+					<img src="arthstr.jpg" width="350" style="border:1px gold; margin:5px">
+				</div>
+				<div class="div4">
+					<h3 align="center">Фракция</h3>
+					<p align="center">Альянс/Плеть</p>
+					<h3 align="center">Титулы:</h3>
+					<p align="center">Принц Лордерона
+					Король Лордерона
+					Король-лич</p>
+					<ul align="center" class="family">
+						<li><h3>Родня:</h3>
+						<ul class="submenu">
+							<li>Tеренас Менетил<br>
+							<li>Лианна Менетил<br>
+							<li>Калия Менетил<br>
+							<li>Утер</p>
+						</ul>
+					</ul>
+					<h3 align="center">Статус:</h3>
+					<p align="center">Мёртв</p>
+				</div>
+			</div>
+			<div style="margin-left:10px;">
+				<div style="height:650px">
+				<img src="26ar1.png" width="750"><br>
+				</div>
+				<p style="font-size:20px;">Артас перед очищением Страхольма в воспоминаниях Джайны</p><br>
+				<input type="button" value="Начать/Остановить" onclick="if(flag1==1) flag1=0; else flag1=1;"><br>
+			</div>
+		</div>
+
+	</body>
+</html>
