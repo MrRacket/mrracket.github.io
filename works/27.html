@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<style>
+			@font-face{
+				font-family: Gismonda;
+				src:url(27font.otf);
+			}
+			body{
+				font-family: Gismonda;
+				font-size:30px;
+				background: url(27bg.jpg)  no-repeat center/100% fixed darkgreen;
+			}
+			.header{
+				background: url(27header.jpg) no-repeat center/100%;
+				width:80%;
+				height:100px;
+				position:relative;
+				left:10%;
+				right:10%;
+				margin-top:50px;
+			}
+			.headertxt{
+				padding:25px;
+				color:rgb(102,153,0);
+			}
+			.main{
+				background:rgba(0,0,0,0.7);
+				width:80%;
+				position:relative;
+				left:10%;
+				right:10%;
+				margin-top:20px;
+				color:rgb(0,153,0);
+			}
+			.demon{
+				width:400px;
+				height:420px;
+				position:relative;
+				left:37%;
+			}
+			.sarg{
+				width:680px;
+				position:relative;
+				left:37%;
+			}
+			A {
+				color: #339966;
+			}
+			A:visited {
+				color: #006600;
+			}
+			A:active {
+				color: #00cc00;
+			}	
+		</style>
+		<script>
+			var arrImg = ["27demon1.jpg","27demon2.jpg","27demon3.jpg","27demon4.jpg"];
+			var i=0;
+			var imgs=new Array('27sarg1.jpg','27sarg2.jpg','27sarg1.jpg');
+			function imgsrc(){
+				var image=document.getElementById("image");
+				image.src=imgs[++i];
+				if (i>1) i=0;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<h1 align="center" class="headertxt">Пылающий Легион</h1>
+		</div>
+		<div class="main">
+		<p>
+		Пылающий Легион (также известный как Легион, Великая Пылающая Тьма, или Легион Нижних Миров) – бесчисленная армия демонов, инферналов и падших рас, целью которой является уничтожение всего во Вселенной и воцарение хаоса. Они трижды вторгались на территорию Азерота, и каждой раз отбить атаку удавалось все большей ценой. Большая часть истории Азерота (в том числе Первая, Вторая и Третья войны) случились под влиянием Пылающего Легиона.
+		</p>
+		<div class="demon">
+		<img src="27demon1.jpg" onmouseover="self = this, i = 0, 
+		ch = setInterval(function(){
+        i = i==arrImg.length-1?0: ++i;
+        var src = self.getAttribute('src');
+        self.setAttribute('src',arrImg[i]);},1500)" onmouseout="clearInterval(ch);" width="400"><br>
+		<p style="font-size:20px; margin:0" align="center">Изображения некоторых видов демонов Легиона</p>
+		</div>
+		<p>
+		Легион – заклятый враг Азерота; именно он развратил орков и направил их через Темный Портал, создал Короля-Лича и является источником большинства разрушений. Следует отметить, что Азерот – единственный известный мир, не павший перед мощью Легиона.
+		</p>
+		<p>
+		Цель Пылающего Легиона - обратить все работы титанов и вернуть Вселенную в ее первозданное хаотическое состояние. На практике демоны Легиона уничтожают всех живых существ в мирах, которые атакуют, и проклинают земли, чтобы поглотить всю их энергию.
+		</p>
+		<p>
+		Пылающий Легион уничтожил множество миров в своей сумасшедшей ненависти и жажде страданий. Он несет ответственность за вымирание тысяч рас Вселенной.
+		</p>
+		<p>
+		Легионом правит падший титан Саргерас – создатель и повелитель Пылающего Легиона, поступки которого и последствия этих поступков делают его главным врагом всего живого в Азероте. Когда-то Саргерас был доблестным титаном Пантеона, сражавшимся против демонов, пока не узнал о существовании Повелителей Бездны и их желании поглотить вселенную. Саргерас стал свидетелем того, как Древние Боги искажают титана, спящего в глубинах планеты. Осознав, насколько велика угроза, он решил, что для спасения вселенной от поглощения Бездной всё живое следует уничтожить. Разногласия с собратьями заставили Саргераса покинуть Пантеон и созвать могущественную армию демонов, которая займется уничтожением миров в Великой запредельной тьме.
+		<div>
+		<p align="center"><img id="image" src="27sarg1.jpg" onClick="imgsrc();" height="470"></p>
+		<p style="font-size:20px; margin:0" align="center">Титан Саргерас до и после своего падения</p>
+		</div>
+		<a href="http://wow.blizzwiki.ru/index.php?title=%D0%9F%D1%8B%D0%BB%D0%B0%D1%8E%D1%89%D0%B8%D0%B9_%D0%9B%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD" onclick="return window.confirm('Перейти на сторонний сайт?');">Страница о Легионе на Warcraft Wiki</a>
+		</div>
+	</body>
+</html>
