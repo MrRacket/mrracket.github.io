@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<title>
+			Армия 7-го легиона
+		</title>
+		<style>
+			@font-face{
+				font-family: Brush;
+				src:url(28font.otf);
+			}
+			body{
+				font-family: Brush;
+				font-size:40px;
+				font-style:italic;
+				font-weight:700;
+				background: url(28mailbox.png)  no-repeat center/100% fixed blue;
+				overflow-x:hidden;
+			}
+			input[type=text]{
+				font-family: Brush;
+				font-size:40px;
+				font-weight:700;
+				border:none;
+				background:none;
+			}
+			select{
+				font-family: Brush;
+				font-size:40px;
+				font-weight:700;
+				border:none;
+				background:none;				
+			}
+			textarea{
+				font-family: Brush;
+				font-size:40px;
+				font-weight:700;
+				border:none;
+				background:none;				
+			}
+			.letter{
+				position:absolute;
+				top:450px;
+				left:900px;
+				width:185px;
+				height:110px;
+				background-image:url(b1.jpg);
+				opacity:0;
+				transition:1s all;
+				font-size:30%;
+			}
+			.letter img{
+				height:40%;
+			}
+			.pic {
+				text-align:center;
+			}
+			.letter:hover{
+				position:absolute;
+				top:50px;
+				left:50px;
+				height:1500px;
+				width:1800px;
+				opacity:1;
+				font-size:100%;
+			}
+		</style>
+		<script>
+			alert('День добрый.');
+		</script>
+	</head>
+	<body>
+		<div class="letter">
+			<h1 align="center">Заявление на вступление в ряды армии 7-го легиона.</h1>
+			<form action="" method="post" class="form" id="form1" onsubmit="prikol(e)">
+				<p>
+					Ваша фамилия:  <input type="text" name="name1"><br>
+					Ваше имя:  <input type="text" name="name2"><br>
+					Ваше отчество:  <input type="text" name="name3"><br>
+					Ваше место рождения:  <input type="text" name="pob"><br>
+					Возраст:  <input type="text" name="years"><br>
+					Телосложение:  <input type="text" name="bodytype"><br>
+					Хотели бы воевать протв Орды?:  <input type="radio" name="Horde" value="Да">Да<input type="radio" name="Horde" value="Нет">Нет<br>
+					Если ответили да, то распишите подробно причину:  <textarea name="reasons" rows="1" cols="100"></textarea><br>
+					Выберете предпочитаемое оружие:  <br>
+					<select type="select" name="weapon"><br>
+						<option>Меч
+						<option>Молот
+						<option>Древковое
+					</select><br>
+					Подпись:  <input type="text" name="name"><br>
+					<input type="image" src="tu.png" align="right" onclick="alert('За Альянс, герой!');"><br>
+				</p>
+			</form>
+			<script>
+				document.querySelector('form.form').addEventListener('submit', function(e) {
+					e.preventDefault();
+					let x = document.querySelector('form.form').elements;
+					console.log("Имя: ", x['name1'].value);
+					console.log("Фамилия: ", x['name2'].value);
+					console.log("Отчество: ", x['name3'].value);
+					console.log("Место рождения: ", x['pob'].value);
+					console.log("Возраст: ", x['years'].value);
+					console.log("Телосложение: ", x['bodytype'].value);
+					console.log("Хотели бы воевать против Орды: ", x['Horde'].value);
+					console.log("Почему да: ", x['reasons'].value);
+					console.log("Оружие: ", x['weapon'].value);
+					console.log("Подпись: ", x['name'].value);
+				});
+			</script>
+		</div>
+	</body>
+</html>
